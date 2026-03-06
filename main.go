@@ -12,6 +12,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/aur"
 	"github.com/skewb1k/pkgrep/internal/npm"
 	"github.com/skewb1k/pkgrep/internal/pypi"
+	"github.com/skewb1k/pkgrep/internal/voidlinux"
 )
 
 // QueryFunc is a function that accepts a search query string and returns a
@@ -30,6 +31,7 @@ var repos = []Repository{
 	{"AUR", aur.Query},
 	{"NPM", npm.Query},
 	{"PyPI", pypi.Query},
+	{"Void", voidlinux.Query},
 }
 
 func main() {
