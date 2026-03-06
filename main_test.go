@@ -31,6 +31,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/nuget"
 	"github.com/skewb1k/pkgrep/internal/opam"
 	"github.com/skewb1k/pkgrep/internal/opensuse"
+	"github.com/skewb1k/pkgrep/internal/pkggodev"
 	"github.com/skewb1k/pkgrep/internal/pubdev"
 	"github.com/skewb1k/pkgrep/internal/pypi"
 	"github.com/skewb1k/pkgrep/internal/rubygems"
@@ -82,6 +83,7 @@ var tests = []testcase{
 	{"NuGet", nuget.Client{testHTTPClient}, "Azure.Core"},
 	{"opam", opam.Client{testHTTPClient}, "ocaml"},
 	{"openSUSE", opensuse.Client{testHTTPClient}, "linux-firmware"},
+	{"pkg.go.dev", pkggodev.Client{testHTTPClient}, "http"},
 	{"pub.dev", pubdev.Client{testHTTPClient}, "http"},
 	{"PyPI", pypi.Client{testHTTPClient}, "pip"},
 	{"RubyGems", rubygems.Client{testHTTPClient}, "rails"},
