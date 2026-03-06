@@ -14,7 +14,6 @@ import (
 	"github.com/skewb1k/pkgrep/internal/cratesio"
 	"github.com/skewb1k/pkgrep/internal/debain"
 	"github.com/skewb1k/pkgrep/internal/fedora"
-	"github.com/skewb1k/pkgrep/internal/freebsd"
 	"github.com/skewb1k/pkgrep/internal/guix"
 	"github.com/skewb1k/pkgrep/internal/nixpkgs"
 	"github.com/skewb1k/pkgrep/internal/npm"
@@ -41,7 +40,6 @@ var repos = []Repository{
 	{"crates.io", cratesio.Query},
 	{"Debian", debian.Query},
 	{"Fedora", fedora.Query},
-	{"FreeBSD", freebsd.Query},
 	{"Guix", guix.Query},
 	{"Nixpkgs", nixpkgs.Query},
 	{"NPM", npm.Query},
