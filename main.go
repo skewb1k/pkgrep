@@ -8,6 +8,7 @@ import (
 	"os"
 
 	"github.com/skewb1k/pkgrep/internal/archlinux"
+	"github.com/skewb1k/pkgrep/internal/aur"
 	"github.com/skewb1k/pkgrep/internal/pypi"
 )
 
@@ -23,6 +24,7 @@ type Repository struct {
 
 var repos = []Repository{
 	{"Arch", archlinux.Query},
+	{"AUR", aur.Query},
 	{"PyPI", pypi.Query},
 }
 
