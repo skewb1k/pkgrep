@@ -12,6 +12,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/archlinux"
 	"github.com/skewb1k/pkgrep/internal/aur"
 	"github.com/skewb1k/pkgrep/internal/cratesio"
+	"github.com/skewb1k/pkgrep/internal/debain"
 	"github.com/skewb1k/pkgrep/internal/npm"
 	"github.com/skewb1k/pkgrep/internal/pypi"
 	"github.com/skewb1k/pkgrep/internal/rubygems"
@@ -34,6 +35,7 @@ var repos = []Repository{
 	{"Arch", archlinux.Query},
 	{"AUR", aur.Query},
 	{"crates.io", cratesio.Query},
+	{"Debian", debian.Query},
 	{"NPM", npm.Query},
 	{"PyPI", pypi.Query},
 	{"RubyGems", rubygems.Query},
