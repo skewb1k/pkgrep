@@ -12,6 +12,7 @@ Supported package repositories:
 - [GNU Guix](https://packages.guix.gnu.org/)
 - [Nixpkgs](https://search.nixos.org/packages)
 - [NPM](https://www.npmjs.com/)
+- [pkg.go.dev](https://pkg.go.dev/)
 - [PyPI](https://pypi.org/)
 - [RubyGems](https://rubygems.org/)
 - [Ubuntu](https://packages.ubuntu.com/)
