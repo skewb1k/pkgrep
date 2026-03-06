@@ -11,6 +11,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/alpine"
 	"github.com/skewb1k/pkgrep/internal/archlinux"
 	"github.com/skewb1k/pkgrep/internal/aur"
+	"github.com/skewb1k/pkgrep/internal/cratesio"
 	"github.com/skewb1k/pkgrep/internal/npm"
 	"github.com/skewb1k/pkgrep/internal/pypi"
 	"github.com/skewb1k/pkgrep/internal/voidlinux"
@@ -30,6 +31,7 @@ var repos = []Repository{
 	{"Alpine", alpine.Query},
 	{"Arch", archlinux.Query},
 	{"AUR", aur.Query},
+	{"crates.io", cratesio.Query},
 	{"NPM", npm.Query},
 	{"PyPI", pypi.Query},
 	{"Void", voidlinux.Query},
