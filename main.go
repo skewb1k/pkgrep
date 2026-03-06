@@ -15,6 +15,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/npm"
 	"github.com/skewb1k/pkgrep/internal/pypi"
 	"github.com/skewb1k/pkgrep/internal/rubygems"
+	"github.com/skewb1k/pkgrep/internal/ubuntu"
 	"github.com/skewb1k/pkgrep/internal/voidlinux"
 )
 
@@ -36,6 +37,7 @@ var repos = []Repository{
 	{"NPM", npm.Query},
 	{"PyPI", pypi.Query},
 	{"RubyGems", rubygems.Query},
+	{"Ubuntu", ubuntu.Query},
 	{"Void", voidlinux.Query},
 }
 
