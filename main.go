@@ -7,6 +7,7 @@ import (
 	"net/url"
 	"os"
 
+	"github.com/skewb1k/pkgrep/internal/alpine"
 	"github.com/skewb1k/pkgrep/internal/archlinux"
 	"github.com/skewb1k/pkgrep/internal/aur"
 	"github.com/skewb1k/pkgrep/internal/npm"
@@ -24,6 +25,7 @@ type Repository struct {
 }
 
 var repos = []Repository{
+	{"Alpine", alpine.Query},
 	{"Arch", archlinux.Query},
 	{"AUR", aur.Query},
 	{"NPM", npm.Query},
