@@ -14,6 +14,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/cratesio"
 	"github.com/skewb1k/pkgrep/internal/npm"
 	"github.com/skewb1k/pkgrep/internal/pypi"
+	"github.com/skewb1k/pkgrep/internal/rubygems"
 	"github.com/skewb1k/pkgrep/internal/voidlinux"
 )
 
@@ -34,6 +35,7 @@ var repos = []Repository{
 	{"crates.io", cratesio.Query},
 	{"NPM", npm.Query},
 	{"PyPI", pypi.Query},
+	{"RubyGems", rubygems.Query},
 	{"Void", voidlinux.Query},
 }
 
