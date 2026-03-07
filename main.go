@@ -11,6 +11,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/alpine"
 	"github.com/skewb1k/pkgrep/internal/archlinux"
 	"github.com/skewb1k/pkgrep/internal/aur"
+	"github.com/skewb1k/pkgrep/internal/chocolatey"
 	"github.com/skewb1k/pkgrep/internal/cratesio"
 	"github.com/skewb1k/pkgrep/internal/debain"
 	"github.com/skewb1k/pkgrep/internal/fedora"
@@ -42,6 +43,7 @@ var repos = []Repository{
 	{"Alpine", alpine.Query},
 	{"Arch", archlinux.Query},
 	{"AUR", aur.Query},
+	{"Chocolatey", chocolatey.Query},
 	{"crates.io", cratesio.Query},
 	{"Debian", debian.Query},
 	{"Fedora", fedora.Query},
