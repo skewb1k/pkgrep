@@ -23,6 +23,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/homebrew"
 	"github.com/skewb1k/pkgrep/internal/julia"
 	"github.com/skewb1k/pkgrep/internal/kali"
+	"github.com/skewb1k/pkgrep/internal/luarocks"
 	"github.com/skewb1k/pkgrep/internal/macports"
 	"github.com/skewb1k/pkgrep/internal/melpa"
 	"github.com/skewb1k/pkgrep/internal/nixpkgs"
@@ -73,6 +74,7 @@ var tests = []testcase{
 	{"Homebrew", homebrew.Client{testHTTPClient}, "go"},
 	{"Julia", julia.Client{testHTTPClient}, "plots"},
 	{"Kali", kali.Client{testHTTPClient}, "linux"},
+	{"LuaRocks", luarocks.Client{testHTTPClient}, "lua-cjson"},
 	{"MacPorts", macports.Client{testHTTPClient}, "go"},
 	{"MELPA", melpa.Client{testHTTPClient}, "magit"},
 	{"Nixpkgs", nixpkgs.Client{testHTTPClient}, "home-manager"},
