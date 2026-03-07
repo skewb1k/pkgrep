@@ -6,7 +6,9 @@ import (
 	"github.com/skewb1k/pkgrep/internal/httputil"
 )
 
-func Query(query string) (bool, error) {
+type Client struct{}
+
+func (Client) Query(query string) (bool, error) {
 	contains, err := httputil.GetBodyContains(fmt.Sprintf("https://packages.altlinux.org/en/sisyphus/srpms/%s", query), "404: That page no exists")
 	return !contains, err
 }
