@@ -16,6 +16,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/fedora"
 	"github.com/skewb1k/pkgrep/internal/guix"
 	"github.com/skewb1k/pkgrep/internal/homebrew"
+	"github.com/skewb1k/pkgrep/internal/luarocks"
 	"github.com/skewb1k/pkgrep/internal/macports"
 	"github.com/skewb1k/pkgrep/internal/nixpkgs"
 	"github.com/skewb1k/pkgrep/internal/npm"
@@ -47,6 +48,7 @@ var repos = []Repository{
 	{"Fedora", fedora.Query},
 	{"Guix", guix.Query},
 	{"Homebrew", homebrew.Query},
+	{"LuaRocks", luarocks.Query},
 	{"MacPorts", macports.Query},
 	{"Nixpkgs", nixpkgs.Query},
 	{"NPM", npm.Query},
