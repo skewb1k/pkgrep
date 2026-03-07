@@ -13,7 +13,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/aur"
 	"github.com/skewb1k/pkgrep/internal/chocolatey"
 	"github.com/skewb1k/pkgrep/internal/cratesio"
-	"github.com/skewb1k/pkgrep/internal/debain"
+	"github.com/skewb1k/pkgrep/internal/debian"
 	"github.com/skewb1k/pkgrep/internal/fedora"
 	"github.com/skewb1k/pkgrep/internal/guix"
 	"github.com/skewb1k/pkgrep/internal/homebrew"
