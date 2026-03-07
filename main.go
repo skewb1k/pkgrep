@@ -18,6 +18,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/homebrew"
 	"github.com/skewb1k/pkgrep/internal/nixpkgs"
 	"github.com/skewb1k/pkgrep/internal/npm"
+	"github.com/skewb1k/pkgrep/internal/opensuse"
 	"github.com/skewb1k/pkgrep/internal/pypi"
 	"github.com/skewb1k/pkgrep/internal/rubygems"
 	"github.com/skewb1k/pkgrep/internal/ubuntu"
@@ -45,6 +46,7 @@ var repos = []Repository{
 	{"Homebrew", homebrew.Query},
 	{"Nixpkgs", nixpkgs.Query},
 	{"NPM", npm.Query},
+	{"openSUSE", opensuse.Query},
 	{"PyPI", pypi.Query},
 	{"RubyGems", rubygems.Query},
 	{"Ubuntu", ubuntu.Query},
