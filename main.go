@@ -26,6 +26,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/opensuse"
 	"github.com/skewb1k/pkgrep/internal/pypi"
 	"github.com/skewb1k/pkgrep/internal/rubygems"
+	"github.com/skewb1k/pkgrep/internal/scoop"
 	"github.com/skewb1k/pkgrep/internal/sisyphus"
 	"github.com/skewb1k/pkgrep/internal/snapcraft"
 	"github.com/skewb1k/pkgrep/internal/ubuntu"
@@ -66,6 +67,7 @@ var repos = []Repository{
 	{"openSUSE", opensuse.Client{httpClient}},
 	{"PyPI", pypi.Client{httpClient}},
 	{"RubyGems", rubygems.Client{httpClient}},
+	{"Scoop", scoop.Client{httpClient}},
 	{"Sisyphus", sisyphus.Client{httpClient}},
 	{"Snapcraft", snapcraft.Client{httpClient}},
 	{"Ubuntu", ubuntu.Client{httpClient}},
