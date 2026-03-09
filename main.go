@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/skewb1k/pkgrep/internal/alpine"
+	"github.com/skewb1k/pkgrep/internal/aosc"
 	"github.com/skewb1k/pkgrep/internal/archlinux"
 	"github.com/skewb1k/pkgrep/internal/aur"
 	"github.com/skewb1k/pkgrep/internal/chocolatey"
@@ -52,6 +53,7 @@ var httpClient = &http.Client{
 
 var repos = []Repository{
 	{"Alpine", alpine.Client{httpClient}},
+	{"AOSC", aosc.Client{httpClient}},
 	{"Arch", archlinux.Client{httpClient}},
 	{"AUR", aur.Client{httpClient}},
 	{"Chocolatey", chocolatey.Client{httpClient}},
