@@ -18,6 +18,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/cran"
 	"github.com/skewb1k/pkgrep/internal/cratesio"
 	"github.com/skewb1k/pkgrep/internal/debian"
+	"github.com/skewb1k/pkgrep/internal/dub"
 	"github.com/skewb1k/pkgrep/internal/fedora"
 	"github.com/skewb1k/pkgrep/internal/guix"
 	"github.com/skewb1k/pkgrep/internal/hackage"
@@ -65,6 +66,7 @@ var repos = []Repository{
 	{"CRAN", cran.Client{httpClient}},
 	{"crates.io", cratesio.Client{httpClient}},
 	{"Debian", debian.Client{httpClient}},
+	{"DUB", dub.Client{httpClient}},
 	{"Fedora", fedora.Client{httpClient}},
 	{"Guix", guix.Client{httpClient}},
 	{"Hackage", hackage.Client{httpClient}},
