@@ -30,6 +30,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/nuget"
 	"github.com/skewb1k/pkgrep/internal/opam"
 	"github.com/skewb1k/pkgrep/internal/opensuse"
+	"github.com/skewb1k/pkgrep/internal/pubdev"
 	"github.com/skewb1k/pkgrep/internal/pypi"
 	"github.com/skewb1k/pkgrep/internal/rubygems"
 	"github.com/skewb1k/pkgrep/internal/scoop"
@@ -77,6 +78,7 @@ var repos = []Repository{
 	{"NuGet", nuget.Client{httpClient}},
 	{"opam", opam.Client{httpClient}},
 	{"openSUSE", opensuse.Client{httpClient}},
+	{"pub.dev", pubdev.Client{httpClient}},
 	{"PyPI", pypi.Client{httpClient}},
 	{"RubyGems", rubygems.Client{httpClient}},
 	{"Scoop", scoop.Client{httpClient}},
