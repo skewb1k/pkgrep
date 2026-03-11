@@ -23,6 +23,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/julia"
 	"github.com/skewb1k/pkgrep/internal/kali"
 	"github.com/skewb1k/pkgrep/internal/macports"
+	"github.com/skewb1k/pkgrep/internal/melpa"
 	"github.com/skewb1k/pkgrep/internal/nixpkgs"
 	"github.com/skewb1k/pkgrep/internal/npm"
 	"github.com/skewb1k/pkgrep/internal/nuget"
@@ -65,6 +66,7 @@ var tests = []testcase{
 	{"Julia", julia.Client{testHTTPClient}, "plots"},
 	{"Kali", kali.Client{testHTTPClient}, "linux"},
 	{"MacPorts", macports.Client{testHTTPClient}, "go"},
+	{"MELPA", melpa.Client{testHTTPClient}, "magit"},
 	{"Nixpkgs", nixpkgs.Client{testHTTPClient}, "home-manager"},
 	{"NPM", npm.Client{testHTTPClient}, "npm"},
 	{"NuGet", nuget.Client{testHTTPClient}, "Azure.Core"},
