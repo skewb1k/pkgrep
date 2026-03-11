@@ -26,6 +26,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/homebrew"
 	"github.com/skewb1k/pkgrep/internal/julia"
 	"github.com/skewb1k/pkgrep/internal/kali"
+	"github.com/skewb1k/pkgrep/internal/luarocks"
 	"github.com/skewb1k/pkgrep/internal/macports"
 	"github.com/skewb1k/pkgrep/internal/melpa"
 	"github.com/skewb1k/pkgrep/internal/nixpkgs"
@@ -81,6 +82,7 @@ var repos = []Repository{
 	{"Homebrew", homebrew.Client{httpClient}},
 	{"Julia", julia.Client{httpClient}},
 	{"Kali", kali.Client{httpClient}},
+	{"LuaRocks", luarocks.Client{httpClient}},
 	{"MacPorts", macports.Client{httpClient}},
 	{"MELPA", melpa.Client{httpClient}},
 	{"Nixpkgs", nixpkgs.Client{httpClient}},
