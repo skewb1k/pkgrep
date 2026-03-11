@@ -18,6 +18,7 @@ Supported package repositories:
 - [Homebrew](https://brew.sh/)
 - [Kali](https://pkg.kali.org/)
 - [MacPorts](https://ports.macports.org/)
+- [MELPA](https://melpa.org/)
 - [Nixpkgs](https://search.nixos.org/packages)
 - [NPM](https://www.npmjs.com/)
 - [NuGet](https://www.nuget.org/)
