@@ -56,6 +56,10 @@ type Repository struct {
 }
 
 var httpClient = &http.Client{
+	Transport: &UserAgentRoundTripper{
+		RoundTripper: http.DefaultTransport,
+		UserAgent:    "pkgrep/0 (https://github.com/skewb1k/pkgrep; mailto:skewb1kunix@gmail.com)",
+	},
 	// TODO(skewb1k): make configurable.
 	Timeout: 20 * time.Second,
 }
