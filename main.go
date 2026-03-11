@@ -15,6 +15,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/archlinux"
 	"github.com/skewb1k/pkgrep/internal/aur"
 	"github.com/skewb1k/pkgrep/internal/chocolatey"
+	"github.com/skewb1k/pkgrep/internal/cran"
 	"github.com/skewb1k/pkgrep/internal/cratesio"
 	"github.com/skewb1k/pkgrep/internal/debian"
 	"github.com/skewb1k/pkgrep/internal/fedora"
@@ -60,6 +61,7 @@ var repos = []Repository{
 	{"Arch", archlinux.Client{httpClient}},
 	{"AUR", aur.Client{httpClient}},
 	{"Chocolatey", chocolatey.Client{httpClient}},
+	{"CRAN", cran.Client{httpClient}},
 	{"crates.io", cratesio.Client{httpClient}},
 	{"Debian", debian.Client{httpClient}},
 	{"Fedora", fedora.Client{httpClient}},
