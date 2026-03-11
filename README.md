@@ -12,6 +12,7 @@ Supported package repositories:
 - [Debian](https://www.debian.org/distrib/packages)
 - [Fedora Linux](https://packages.fedoraproject.org/)
 - [GNU Guix](https://packages.guix.gnu.org/)
+- [Hex](https://hex.pm/)
 - [Homebrew](https://brew.sh/)
 - [Kali](https://pkg.kali.org/)
 - [MacPorts](https://ports.macports.org/)

@@ -19,6 +19,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/debian"
 	"github.com/skewb1k/pkgrep/internal/fedora"
 	"github.com/skewb1k/pkgrep/internal/guix"
+	"github.com/skewb1k/pkgrep/internal/hex"
 	"github.com/skewb1k/pkgrep/internal/homebrew"
 	"github.com/skewb1k/pkgrep/internal/kali"
 	"github.com/skewb1k/pkgrep/internal/macports"
@@ -61,6 +62,7 @@ var repos = []Repository{
 	{"Debian", debian.Client{httpClient}},
 	{"Fedora", fedora.Client{httpClient}},
 	{"Guix", guix.Client{httpClient}},
+	{"Hex", hex.Client{httpClient}},
 	{"Homebrew", homebrew.Client{httpClient}},
 	{"Kali", kali.Client{httpClient}},
 	{"MacPorts", macports.Client{httpClient}},
