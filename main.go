@@ -27,6 +27,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/macports"
 	"github.com/skewb1k/pkgrep/internal/nixpkgs"
 	"github.com/skewb1k/pkgrep/internal/npm"
+	"github.com/skewb1k/pkgrep/internal/nuget"
 	"github.com/skewb1k/pkgrep/internal/opam"
 	"github.com/skewb1k/pkgrep/internal/opensuse"
 	"github.com/skewb1k/pkgrep/internal/pypi"
@@ -73,6 +74,7 @@ var repos = []Repository{
 	{"MacPorts", macports.Client{httpClient}},
 	{"Nixpkgs", nixpkgs.Client{httpClient}},
 	{"NPM", npm.Client{httpClient}},
+	{"NuGet", nuget.Client{httpClient}},
 	{"opam", opam.Client{httpClient}},
 	{"openSUSE", opensuse.Client{httpClient}},
 	{"PyPI", pypi.Client{httpClient}},
