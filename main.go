@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"runtime/debug"
 	"slices"
 	"strings"
 	"sync"
@@ -117,6 +118,7 @@ func (rl *repoList) Set(value string) error {
 
 var flagDryRun = flag.Bool("dry-run", false, "do everything except actually send the requests")
 var flagList = flag.Bool("list", false, "list repositories")
+var flagVersion = flag.Bool("version", false, "print version")
 var flagInclude repoList
 var flagExclude repoList
 
@@ -142,6 +144,15 @@ func main() {
 	}
 
 	flag.Parse()
+
+	if *flagVersion {
+		if build, ok := debug.ReadBuildInfo(); ok {
+			fmt.Println(build.Main.Version)
+		} else {
+			fmt.Println("unknown version")
+		}
+		return
+	}
 
 	if *flagList {
 		for _, repo := range repos {
