@@ -17,6 +17,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/archlinux"
 	"github.com/skewb1k/pkgrep/internal/aur"
 	"github.com/skewb1k/pkgrep/internal/chocolatey"
+	"github.com/skewb1k/pkgrep/internal/clojars"
 	"github.com/skewb1k/pkgrep/internal/cran"
 	"github.com/skewb1k/pkgrep/internal/cratesio"
 	"github.com/skewb1k/pkgrep/internal/debian"
@@ -111,6 +112,7 @@ func main() {
 		archlinux.Client{httpClient},
 		aur.Client{httpClient},
 		chocolatey.Client{httpClient},
+		clojars.Client{httpClient},
 		cran.Client{httpClient},
 		cratesio.Client{httpClient},
 		debian.Client{httpClient},

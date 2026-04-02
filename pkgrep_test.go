@@ -12,6 +12,7 @@ import (
 	"github.com/skewb1k/pkgrep/internal/archlinux"
 	"github.com/skewb1k/pkgrep/internal/aur"
 	"github.com/skewb1k/pkgrep/internal/chocolatey"
+	"github.com/skewb1k/pkgrep/internal/clojars"
 	"github.com/skewb1k/pkgrep/internal/cran"
 	"github.com/skewb1k/pkgrep/internal/cratesio"
 	"github.com/skewb1k/pkgrep/internal/debian"
@@ -63,6 +64,7 @@ var tests = []testcase{
 	{archlinux.Client{testHTTPClient}, "linux"},
 	{aur.Client{testHTTPClient}, "google-chrome"},
 	{chocolatey.Client{testHTTPClient}, "go"},
+	{clojars.Client{testHTTPClient}, "core.typed"},
 	{cran.Client{testHTTPClient}, "ggplot2"},
 	{cratesio.Client{testHTTPClient}, "chroma-ls"},
 	{debian.Client{testHTTPClient}, "linux-base"},
