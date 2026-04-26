@@ -36,7 +36,6 @@ import (
 	"github.com/skewb1k/pkgrep/internal/npm"
 	"github.com/skewb1k/pkgrep/internal/nuget"
 	"github.com/skewb1k/pkgrep/internal/opam"
-	"github.com/skewb1k/pkgrep/internal/opensuse"
 	"github.com/skewb1k/pkgrep/internal/pkggodev"
 	"github.com/skewb1k/pkgrep/internal/pubdev"
 	"github.com/skewb1k/pkgrep/internal/pypi"
@@ -132,7 +131,6 @@ func main() {
 		npm.Client{httpClient},
 		nuget.Client{httpClient},
 		opam.Client{httpClient},
-		opensuse.Client{httpClient},
 		pkggodev.Client{httpClient},
 		pubdev.Client{httpClient},
 		pypi.Client{httpClient},

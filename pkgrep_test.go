@@ -31,7 +31,6 @@ import (
 	"github.com/skewb1k/pkgrep/internal/npm"
 	"github.com/skewb1k/pkgrep/internal/nuget"
 	"github.com/skewb1k/pkgrep/internal/opam"
-	"github.com/skewb1k/pkgrep/internal/opensuse"
 	"github.com/skewb1k/pkgrep/internal/pkggodev"
 	"github.com/skewb1k/pkgrep/internal/pubdev"
 	"github.com/skewb1k/pkgrep/internal/pypi"
@@ -83,7 +82,6 @@ var tests = []testcase{
 	{npm.Client{testHTTPClient}, "npm"},
 	{nuget.Client{testHTTPClient}, "Azure.Core"},
 	{opam.Client{testHTTPClient}, "ocaml"},
-	{opensuse.Client{testHTTPClient}, "linux-firmware"},
 	{pkggodev.Client{testHTTPClient}, "http"},
 	{pubdev.Client{testHTTPClient}, "http"},
 	{pypi.Client{testHTTPClient}, "pip"},
