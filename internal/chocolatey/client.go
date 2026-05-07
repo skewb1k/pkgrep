@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/skewb1k/pkgrep/internal/httputil"
+	"github.com/arkriny/pkgrep/internal/httputil"
 )
 
 type Client struct {

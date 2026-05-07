@@ -2,7 +2,7 @@ Pkgrep queries multiple package repositories by package name.
 
 Usage:
 
-    go install github.com/skewb1k/pkgrep@latest
+    go install github.com/arkriny/pkgrep@latest
 
     pkgrep [-dry-run] [-include REPO[,REPO...]] [-exclude REPO[,REPO...]] QUERY
     pkgrep -list

@@ -1,3 +1,3 @@
-module github.com/skewb1k/pkgrep
+module github.com/arkriny/pkgrep
 
 go 1.25.0
